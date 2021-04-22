@@ -1,11 +1,11 @@
 var randomNumber1 = Math.floor(Math.random() * 6) + 1; //random number 1 - 6
-var randomDiceimage = "dice" + randomNumber1 + ".png"; // dice image
-var randomImageSource = "images/" + randomDiceimage ; // images/dice1-6
+var randomDiceimage = "dice" + randomNumber1 + ".png"; // dice 1-6 image
+//var randomImageSource = "images/" + randomDiceimage ; // images/dice1-6
 var image1 = document.querySelectorAll("img")[0];
-image1.setAttribute("src" , randomImageSource);
+image1.setAttribute("src" , randomDiceimage);
 
 var randomNumber2 = Math.floor(Math.random()*6)+1;
-var randomDiceimage2= "images/dice" + randomNumber2 + ".png";
+var randomDiceimage2= "dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", randomDiceimage2);
 
 if (randomNumber1 > randomNumber2) {
